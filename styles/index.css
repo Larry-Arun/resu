@@ -1,6 +1,6 @@
 body {
     font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.375em;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@ dl dt {
 header > section,
 header > address,
 .content > article {
-    min-width: 345.6px;
+    min-width: 405px;
 }
 
 
@@ -178,13 +178,10 @@ h2 {
 /* end skill */
 
 /* css for media */
-@media screen and (min-width: 0) {
+/* @media screen and (min-width: 0) {
     .container {
         width: 90%;
     }
-    /* body {
-        font-size: 14px;
-    } */
     header,.content {
         flex-wrap: wrap;
         justify-content: center;
@@ -197,9 +194,6 @@ h2 {
     .container {
         width: 730px;
     }
-    /* body {
-        font-size: 15px;
-    } */
     header, .content {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -213,9 +207,19 @@ h2 {
     .container {
         width: 1000px;
     }
-    /* body {
-        font-size: 16px;
-    } */
+    header, .content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .title {
+    	text-align:left;
+    }
+} */
+
+@media screen and (min-width: 900px) {
+	.container {
+        width: 900px;
+    }
     header, .content {
         flex-wrap: nowrap;
         justify-content: space-between;
@@ -224,6 +228,17 @@ h2 {
     	text-align:left;
     }
 }
-
+@media screen and (max-width: 900px) {
+	.container {
+	    width: 100%;
+	}
+	header,.content {
+	    flex-wrap: wrap;
+	    justify-content: center;
+	}
+	.title {
+		text-align:center;
+	}
+}
 
 /* end media */
