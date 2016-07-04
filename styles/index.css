@@ -1,144 +1,229 @@
 body {
-	font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:16px;
-	line-height: 22px;
-	display: flex;
-	justify-content: center;
-}
-.container {
-	margin-top: 40px;
-}
-@media screen and (min-width: 1200px) {
-	.container {
-		width: 1030px;
-	}
+    font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.375em;
+    display: flex;
+    justify-content: center;
 }
 
-h1, strong {
-	color: rgb(102,121,223);
+.container {
+    margin-top: 2.5em;
 }
+
+h1,
+strong {
+    color: rgb(102, 121, 223);
+}
+
 ul {
-	list-style-type: none;
-	padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
+
 dl {
-	margin: 0;
+    margin: 0;
 }
+
 dl dt {
-	font-weight: bold;
-	font-size: 16px;
+    font-weight: bold;
 }
+
+header > section,
+header > address,
+.content > article {
+    min-width: 345.6px;
+}
+
+
 /* css for header */
+
 header {
-	display: flex;
-	justify-content: space-between;
+    display: flex;
 }
+
 h1 {
-	margin-bottom: 0;
-}
-.title {
-	text-align: left;
+    margin-bottom: 0;
 }
 address {
-	font-style: normal;
+    font-style: normal;
 }
+
 .contact li span {
-	width: 80px;
-	text-align:right;
-	display: inline-block;
+    width: 80px;
+    text-align: right;
+    display: inline-block;
 }
+
+
 /* end header */
 
+
 /* css for content */
+
 .content {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
+    display: flex;
+    margin-top: 20px;
 }
+
 .content > article {
-	flex: 0 0 45%;
+    flex: 0 0 45%;
 }
+
 .content > article > section {
-	padding: 15px 0;
+    padding: 15px 0;
 }
+
 h2 {
-	font-size:20px;
-	padding-bottom: 5px;
-	border-bottom: 1px solid black;
+    font-size: 1.25em;
+    /* 20/16 */
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
 }
+
+
 /* end content */
 
 .circle {
-	width: 8px;
-	height: 8px;
-	margin: 0 10px;
-	background: black;
-	border: 1px solid white;
-	border-radius:100%;
-	display: inline-block;
+    width: .5em;
+    height: .5em;
+    margin: 0 .625em;
+    /* 10/16 */
+    background: black;
+    border: 1px solid white;
+    border-radius: 100%;
+    display: inline-block;
 }
+
+
 /* css for education */
+
 .edu-content {
-	display: inline-block;
-	margin-left: 105.45px;
-	padding-left: 14px;
-	border-left: 1px solid black;
+    display: inline-block;
+    margin-left: 6.590625em;
+    /* 105.45px */
+    padding-left: 14px;
+    border-left: 1px solid black;
 }
+
 .edu-title {
-	font-weight: bold;
-	font-size: 16px;
-	margin-bottom: 3px;
-	display: inline-block;
+    font-weight: bold;
+    margin-bottom: 3px;
+    display: inline-block;
 }
+
 .edu-placeholder {
-	height: 10px;
-	border-left: 1px solid black;
-	margin-left: 105.45px;
+    height: .625em;
+    border-left: 1px solid black;
+    margin-left: 6.590625em;
+    /* 105.45px */
 }
+
+
 /* end education */
 
-/* css for project */
-.project dl dd {
-	margin-left: 14px;
-	padding-left: 14px;
-	border-left: 1px solid black;
-}
-.project dl dd:first-child {
-	padding-top: 10px;
-}
-.project dl dd:last-child {
-	padding-bottom: 10px;
-}
-.key-point {
-	background: rgb(102,121,223);
-	color: white;
-	padding: 2px 4px;
-	margin: 5px 0;
-	display: inline-block;
-	font-size:14px;
-}
-/* end project */
 
-.award-item:before, .skill-item dd:before ,.other-item li:before, .eval-item li:before{
-	content:"";
-	background: url('../img/check.png') no-repeat;
-	background-size: 12px 12px;
-	display: inline-block;
-	width: 12px; 
-	height: 12px;
-	padding-right: 5px;
+/* css for project */
+
+.project dl dd {
+    margin-left: 14px;
+    padding-left: 14px;
+    border-left: 1px solid black;
+}
+
+.project dl dd:first-child {
+    padding-top: 10px;
+}
+
+.project dl dd:last-child {
+    padding-bottom: 10px;
+}
+
+.key-point {
+    background: rgb(102, 121, 223);
+    color: white;
+    padding: 2px 4px;
+    margin: 5px 0;
+    display: inline-block;
+    font-size: .875em;
+    /* 14/16 */
+}
+
+/* end project */
+.award-item:before,
+.skill-item dd:before,
+.other-item li:before,
+.eval-item li:before {
+    content: "";
+    background: url('../img/check.png') no-repeat;
+    background-size: 12px 12px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    padding-right: 5px;
 }
 /* css for skill */
+
 .skill-item dd {
-	margin-left: 0;
+    margin-left: 0;
 }
 .skill-item dt {
-	margin: 5px 0;
+    margin: 5px 0;
 }
 .skill-item {
-	margin-bottom:15px;
+    margin-bottom: 15px;
 }
 .skill-item:last-child {
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 /* end skill */
+
+/* css for media */
+@media screen and (min-width: 0) {
+    .container {
+        width: 90%;
+    }
+    /* body {
+        font-size: 14px;
+    } */
+    header,.content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title {
+    	text-align:center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        width: 730px;
+    }
+    /* body {
+        font-size: 15px;
+    } */
+    header, .content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .title {
+    	text-align:left;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1000px;
+    }
+    /* body {
+        font-size: 16px;
+    } */
+    header, .content {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .title {
+    	text-align:left;
+    }
+}
+
+
+/* end media */
