@@ -28,13 +28,6 @@ dl dt {
     font-weight: bold;
 }
 
-header > section,
-header > address,
-.content > article {
-    min-width: 405px;
-}
-
-
 /* css for header */
 
 header {
@@ -177,45 +170,14 @@ h2 {
 }
 /* end skill */
 
+
+/* css for footer */
+footer {
+	height: 50px;
+}
+/* end footer */
+
 /* css for media */
-/* @media screen and (min-width: 0) {
-    .container {
-        width: 90%;
-    }
-    header,.content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .title {
-    	text-align:center;
-    }
-}
-@media screen and (min-width: 768px) {
-    .container {
-        width: 730px;
-    }
-    header, .content {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .title {
-    	text-align:left;
-    }
-
-}
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1000px;
-    }
-    header, .content {
-        flex-wrap: nowrap;
-        justify-content: space-between;
-    }
-    .title {
-    	text-align:left;
-    }
-} */
-
 @media screen and (min-width: 900px) {
 	.container {
         width: 900px;
@@ -230,14 +192,18 @@ h2 {
 }
 @media screen and (max-width: 900px) {
 	.container {
-	    width: 100%;
+	    width: 95%;
 	}
 	header,.content {
 	    flex-wrap: wrap;
 	    justify-content: center;
+	    flex-direction: column;
 	}
 	.title {
 		text-align:center;
+	}
+	header {
+		align-items: center;
 	}
 }
 
