@@ -7,11 +7,12 @@ body {
 }
 
 .container {
-    margin-top: 2.5em;
+    margin-top: 2.66666667em; /* 40/15 */
 }
 
 h1,
-strong {
+strong,
+a {
     color: rgb(102, 121, 223);
 }
 
@@ -42,7 +43,7 @@ address {
 }
 
 .contact li span {
-    width: 80px;
+    width: 5.33333333em; /* 80/15 */
     text-align: right;
     display: inline-block;
 }
@@ -55,7 +56,7 @@ address {
 
 .content {
     display: flex;
-    margin-top: 20px;
+    margin-top: 1.33333333em;
 }
 
 .content > article {
@@ -63,13 +64,13 @@ address {
 }
 
 .content > article > section {
-    padding: 15px 0;
+    padding: 1em 0;
 }
 
 h2 {
-    font-size: 1.25em;
-    /* 20/16 */
-    padding-bottom: 5px;
+    font-size: 1.33333333em;
+    /* 20/15 */
+    padding-bottom: .33333333em; /* 5/15 */
     border-bottom: 1px solid black;
 }
 
@@ -77,10 +78,10 @@ h2 {
 /* end content */
 
 .circle {
-    width: .5em;
-    height: .5em;
-    margin: 0 .625em;
-    /* 10/16 */
+    width: .53333333em;
+    height: .53333333em; /* 8/15 */
+    margin: 0 .66666667em;
+    /* 10/15 */
     background: black;
     border: 1px solid white;
     border-radius: 100%;
@@ -92,23 +93,23 @@ h2 {
 
 .edu-content {
     display: inline-block;
-    margin-left: 6.590625em;
-    /* 105.45px */
-    padding-left: 14px;
+    margin-left: 6.64866667em;
+    /* (85.73+10+4)/15 */
+    padding-left: .93333333em; /* 14/15 */
     border-left: 1px solid black;
 }
 
 .edu-title {
     font-weight: bold;
-    margin-bottom: 3px;
+    margin-bottom: .2em; /* 3/15 */
     display: inline-block;
 }
 
 .edu-placeholder {
     height: .625em;
     border-left: 1px solid black;
-    margin-left: 6.590625em;
-    /* 105.45px */
+    margin-left: 6.64866667em;
+     /* (85.73+10+4)/15 */
 }
 
 
@@ -118,24 +119,24 @@ h2 {
 /* css for project */
 
 .project dl dd {
-    margin-left: 14px;
-    padding-left: 14px;
+    margin-left: .93333333em; /* 14/15 */
+    padding-left: .93333333em;
     border-left: 1px solid black;
 }
 
 .project dl dd:first-child {
-    padding-top: 10px;
+    padding-top: .66666667em; /* 10/15 */
 }
 
 .project dl dd:last-child {
-    padding-bottom: 10px;
+    padding-bottom: .66666667em;
 }
 
 .key-point {
     background: rgb(102, 121, 223);
     color: white;
-    padding: 2px 4px;
-    margin: 5px 0;
+    padding: .13333333em .33333333em; /* 2px 5px */
+    margin: .33333333em 0; /* 5/15 */
     display: inline-block;
     font-size: .875em;
     /* 14/16 */
@@ -148,11 +149,11 @@ h2 {
 .eval-item li:before {
     content: "";
     background: url('../img/check.png') no-repeat;
-    background-size: 12px 12px;
+    background-size: .8em .8em; /* 12/15 */
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    padding-right: 5px;
+    width: .8em; 
+    height: .8em;
+    padding-right: .33333333em; /* 5/15 */
 }
 /* css for skill */
 
@@ -160,10 +161,10 @@ h2 {
     margin-left: 0;
 }
 .skill-item dt {
-    margin: 5px 0;
+    margin: .33333333em 0; /* 5/15 */
 }
 .skill-item {
-    margin-bottom: 15px;
+    margin-bottom: 1em; /* 15/15 */
 }
 .skill-item:last-child {
     margin-bottom: 0;
@@ -173,7 +174,9 @@ h2 {
 
 /* css for footer */
 footer {
-	height: 50px;
+	text-align: center;
+	font-size: .8em;
+	margin: 3em 0 2em;
 }
 /* end footer */
 
