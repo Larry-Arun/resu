@@ -83,7 +83,6 @@ h2 {
     margin: 0 .66666667em;
     /* 10/15 */
     background: black;
-    border: 1px solid white;
     border-radius: 100%;
     display: inline-block;
 }
@@ -96,10 +95,10 @@ h2 {
 }
 .edu-content {
     display: inline-block;
-    margin-left: 6.73333333em;
-    /* (87+10+4)/15 */
-    padding-left: .93333333em; /* 14/15 */
-    border-left: 1px solid black;
+    margin-left: 6.7em;
+    /* (87+10+4-0.5)/15 */
+    padding-left: .9em; /* 13.5/15 */
+    border-left: .06666667em solid black; /* 1/15 */
 }
 
 .edu-title {
@@ -111,8 +110,8 @@ h2 {
 .edu-placeholder {
     height: .625em;
     border-left: 1px solid black;
-    margin-left: 6.73333333em;
-     /* (85.73+10+4)/15 */
+    margin-left: 6.7em;
+    /* (87+10+4-0.5)/15 */
 }
 
 
@@ -120,11 +119,13 @@ h2 {
 
 
 /* css for project */
-
+.project dl dt {
+    margin-bottom: .2em;
+}
 .project dl dd {
-    margin-left: .93333333em; /* 14/15 */
-    padding-left: .93333333em;
-    border-left: 1px solid black;
+    margin-left: .9em; /* 13.5/15 */
+    padding-left: .9em;
+    border-left: .06666667em solid black; /* 1px */
 }
 
 .project dl dd:first-child {
