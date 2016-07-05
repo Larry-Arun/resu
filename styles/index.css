@@ -203,7 +203,7 @@ footer {
 	}
 	header,.content {
 	    flex-wrap: wrap;
-	    justify-content: center;
+	    /* justify-content: center; */
 	    flex-direction: column;
 	}
 	.title {
