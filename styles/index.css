@@ -144,7 +144,17 @@ h2 {
     padding-top: .66666667em;
     /* 10/15 */
 }
-
+.project dl dd:first-child span {
+    display: inline-block;
+    width: 6em;
+    background-color: rgb(233,236,251);
+    color: rgb(102, 121, 223);
+    font-size: .8em;
+    text-align: center;
+    margin-left: 1em;
+    line-height: 1.5em;
+    border-radius: .75em;
+}
 .project dl dd:last-child {
     padding-bottom: .66666667em;
 }
