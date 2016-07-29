@@ -1,7 +1,7 @@
 body {
     font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;
     font-size: 15px;
-    line-height: 1.375em;
+    line-height: 1.5em;
     display: flex;
     justify-content: center;
 }
@@ -28,6 +28,7 @@ dl {
 
 dl dt {
     font-weight: bold;
+    font-size: 1.04em;
 }
 
 
@@ -64,7 +65,7 @@ address {
 }
 
 .content > article > section {
-    padding: 1em 0;
+    padding: .5em 0;
 }
 
 h2 {
@@ -166,7 +167,8 @@ h2 {
 .award-item:before,
 .skill-item dd:before,
 .other-item li:before,
-.eval-item li:before {
+.eval-item li:before,
+.project dl dd li:before {
     content: "";
     background: url('../img/check.png') no-repeat;
     background-size: .8em .8em;
