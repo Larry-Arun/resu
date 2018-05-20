@@ -28,9 +28,9 @@ dl {
 
 dl dt {
     font-weight: bold;
+
     font-size: 1.04em;
 }
-
 
 /* css for header */
 
@@ -267,6 +267,7 @@ footer {
     }
     header {
         align-items: center;
+
     }
     .content > article {
         padding: 0;
@@ -275,6 +276,5 @@ footer {
         font-size: .94em;
     }
 }
-
 
 /* end media */
